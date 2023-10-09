@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/WeatheringWithU/static/css/main.d5afec79.css",
+    "main.js": "/WeatheringWithU/static/js/main.bcd7ffc1.js",
+    "index.html": "/WeatheringWithU/index.html",
+    "main.d5afec79.css.map": "/WeatheringWithU/static/css/main.d5afec79.css.map",
+    "main.bcd7ffc1.js.map": "/WeatheringWithU/static/js/main.bcd7ffc1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5afec79.css",
+    "static/js/main.bcd7ffc1.js"
+  ]
+}
