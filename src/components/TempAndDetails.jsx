@@ -17,7 +17,7 @@ function TempAndDetails({weather: {description, icon, temp, temp_min, temp_max, 
         <p>{description}</p>
     </div>
 
-    <div className='flex flex-row items-center justify-between text-white py-0 mt-[-10px]'>
+    <div className='flex flex-col md:flex-row items-center justify-between text-white py-0 mt-[-10px]'>
         <img src={iconUrlFromCode(icon)} 
         alt=""
         className='w-20' 

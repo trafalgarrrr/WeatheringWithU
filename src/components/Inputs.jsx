@@ -55,30 +55,27 @@ function Inputs({setQuery, units, setUnits}) {
 
   return (
     <div className='flex flex-row justify-center my-2'>
-        <div className='flex flex-row w-3/4 items-center justify-center space-x-4'>
+        <div className='flex flex-row w-fit items-center justify-center space-x-1'>
             <input 
             value={city}
             onChange={(e) => setCity(e.currentTarget.value)}
             type="text" 
             placeholder='Search for city...'
-            className='text-xl font-light  p-2 w-full shadow-xl focus:outline-none capitalize' />
+            className='text-sm md:text-xl flex items-center justify-around my-2 sm:fit md:w-fit border rounded py-2 px-4 p-3 font-light w-fit shadow-xl focus:outline-none capitalize' />
             <UilSearch size={25} 
             className="cursor-pointer  text-white hover:text-cyan-300 transition-colors hover:scale-150"
             onClick={handleSearchClick}
             
             />
-            <UilLocationPoint size={25} 
-            className="cursor-pointer  text-white hover:text-cyan-300 transition-colors hover:scale-150"
+            <UilLocationPoint
+            size={25}                          
+            className="text-sm  flex cursor-pointer text-white hover:text-cyan-300 transition-colors hover:scale-150"
             onClick={handleLocationClick}
-            //onMouseEnter={handleMouseEnter}
-            //onMouseLeave={handleMouseLeave}
-
-           
-            />
+/>
         </div>
-
-        <div className='flex row w-1/4 items-center justify-center'>
-            <button name='metric' className='text-xl  font-light cursor-pointer  text-white hover:text-cyan-300 transition-colors hover:scale-150 '
+        
+        <div className='flex row md:w-fit items-center text-xl mx-2 -my-2 justify-center'>
+            <button name='metric' className='sm:w-fit md:w-fit  font-light cursor-pointer  text-white hover:text-cyan-300 transition-colors hover:scale-150 '
             onClick={handleUnitsChange}>
             °C
             </button>
