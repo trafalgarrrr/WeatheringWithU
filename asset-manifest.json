@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/WeatheringWithU/static/css/main.fd4e1c96.css",
-    "main.js": "/WeatheringWithU/static/js/main.0092bfc8.js",
+    "main.css": "/WeatheringWithU/static/css/main.2167438e.css",
+    "main.js": "/WeatheringWithU/static/js/main.0c13b69f.js",
     "index.html": "/WeatheringWithU/index.html",
-    "main.fd4e1c96.css.map": "/WeatheringWithU/static/css/main.fd4e1c96.css.map",
-    "main.0092bfc8.js.map": "/WeatheringWithU/static/js/main.0092bfc8.js.map"
+    "main.2167438e.css.map": "/WeatheringWithU/static/css/main.2167438e.css.map",
+    "main.0c13b69f.js.map": "/WeatheringWithU/static/js/main.0c13b69f.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd4e1c96.css",
-    "static/js/main.0092bfc8.js"
+    "static/css/main.2167438e.css",
+    "static/js/main.0c13b69f.js"
   ]
 }
