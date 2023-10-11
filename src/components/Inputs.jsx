@@ -12,6 +12,14 @@ function Inputs({setQuery, units, setUnits}) {
 
   const handleSearchClick = async () => {
     if (city !== '') {
+      // Regular expression to check if the city contains any numbers
+      const containsNumbers = /\d/.test(city);
+  
+      if (containsNumbers) {
+        alert('City name must not contain numbers');
+        return;
+      }
+  
       try {
         const API_KEY = "96b1ed10508eb6a22e446f44fbe50b82";
         const BASE_URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
@@ -33,7 +41,6 @@ function Inputs({setQuery, units, setUnits}) {
       alert('Please input a city name!');
     }
   };
-
 
 
   const handleLocationClick = () => {
