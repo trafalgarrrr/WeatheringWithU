@@ -8,7 +8,7 @@ function Forecast({ title, items}) {
         <p className='text-white -ml-6 md:-ml-6  font-medium uppercase whitespace-nowrap mb-6 mt-3'>{title}
         </p>
     </div>
-    <hr className='-ml-20 -mr-20 md:-ml-6 md:mr-6 mb-4 border-b-2'/>
+    <hr className='-ml-20 -mr-20 md:-ml-6 md:-mr-20 mb-4 border-b-2'/>
     <div className='tracking-wide leading-tight flex text-sm -ml-4 md:text-xl flex-col md:flex-row w-fit items-center justify-between m-2 pr-2 text-cyan-200 '>
         {items.map((item) => (
             <div className='flex sm:flex-row -ml-20 sm:w-fit md:w-fit sm:p-0 pr-0 md:flex-col item-center md:pr-1  md: justify-between sm:m-2 md:m-0 tracking-wide leading-tight ' >
@@ -19,7 +19,7 @@ function Forecast({ title, items}) {
             className='mb-4 -mt-2 md:text-lg whitespace-nowrap mr-4 flex flex-row text-sm  w-12 md:w-12 my-0'/>
             
             <p className='font-medium mx-2 tracking-wide '>{`${item.temp.toFixed()}°`}</p>
-            <p className='justify-center font-medium mx-2 md:text-lg  whitespace-nowrap capitalize mb-3'>{`${item.description}`}</p>
+            <p className='justify-center font-medium mx-2 md:text-sm  whitespace-nowrap capitalize mb-3'>{`${item.description}`}</p>
             
             
             
