@@ -5,21 +5,23 @@ function Forecast({ title, items}) {
     console.log(items);
   return <div>
     <div className='flex items-center justify-start mt-6'>
-        <p className='text-white font-medium uppercase'>{title}
+        <p className='text-white -ml-16 font-medium uppercase whitespace-nowrap'>{title}
         </p>
     </div>
-    <hr className='my-2'/>
-    <div className='flex flex-col md:flex-row w-fit items-center justify-between m-2 pr-2 text-cyan-200'>
+    <hr className='-ml-16 '/>
+    <div className='tracking-wide leading-tight flex text-sm  md:text-xl flex-col md:flex-row w-fit items-center justify-between m-2 pr-2 text-cyan-200 '>
         {items.map((item) => (
-            <div className='flex flex-col item-center justify-center mr-2'>
-            <p className='font-bold text-lg text-white mr-4 '>{item.title}
+            <div className='flex flex-col item-center justify-center tracking-wide leading-tight ' >
+            <p className='text-sm  md:w-fit mb-4 font-bold md:text-lg whitespace-nowrap mr-4 flex flex-row text-white  '>{item.title} <br class="block" />
             </p>
+            <hr className='my-0 border-b-2 md:hidden'/>
             <img src={iconUrlFromCode(item.icon)}alt=""
-            className='w-fit md:w-12 my-1'/>
+            className='text-sm w-fit md:w-12 my-0'/>
             
-            <p className='font-medium mx-2'>{`${item.temp.toFixed()}°`}</p>
-            <p className='font-medium mx-2'>{`${item.description}`}</p>
-            <hr className='sm:my-2 border-b-2 '/>
+            <p className='font-medium mx-2 tracking-wide '>{`${item.temp.toFixed()}°`}</p>
+            <p className='justify-center font-medium mx-2 md:text-lg whitespace-normal capitalize mb-3'>{`${item.description}`}</p>
+            
+            
             
 
         </div>
