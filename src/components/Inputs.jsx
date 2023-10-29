@@ -14,9 +14,14 @@ function Inputs({setQuery, units, setUnits}) {
     if (city !== '') {
       // Regular expression to check if the city contains any numbers
       const containsNumbers = /\d/.test(city);
+      const containsMultipleSpaces = / {2,}/.test(city);
+
   
       if (containsNumbers) {
         alert('City name must not contain numbers');
+        return;
+      } else if (containsMultipleSpaces) {
+        alert('City name must not contain multiple consecutive spaces');
         return;
       }
   

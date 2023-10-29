@@ -1,5 +1,5 @@
 {
-  "homepage": "http://trafalgarrrr.github.io/WeatheringWithU",
+  "homepage": "https://trafalgarrrr.github.io/WeatheringWithU",
   "name": "weather",
   "version": "0.1.0",
   "private": true,
@@ -42,7 +42,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
-    "gh-pages": "^6.0.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.3.3"
   }
